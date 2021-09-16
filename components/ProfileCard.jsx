@@ -121,7 +121,7 @@ const ProfileCard = () => {
             <h4 className="mb-2 font-normal text-gray-800">
               Subscribe to my profile and never miss another update from me.
             </h4>
-            <form className="md:flex grid gap-3 flex-col">
+            <form className="md:flex grid gap-3">
               <input
                 type="email"
                 className="border outline-none border-gray-300 px-3.5 py-1.5 rounded-md w-full"

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import navIcon from "./images/nav.svg";
+import crossIcon from "./images/cross.svg";
 const Header = () => {
   const [showNav, setShowNav] = useState(false);
   return (
@@ -12,7 +13,7 @@ const Header = () => {
       <nav>
         <img
           className="cursor-pointer md:hidden"
-          src={navIcon}
+          src={!showNav ? navIcon.src : crossIcon.src}
           onClick={() => setShowNav(!showNav)}
         />
       </nav>
