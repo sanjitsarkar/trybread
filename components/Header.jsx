@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <header className="h-16 flex bg-primary items-center justify-between px-7 text-white shadow-md fixed left-0 top-0 w-full z-50">
       <nav className="left">
-        <a href="/" className="">
+        <a href="#" className="">
           bre.ad/jane
         </a>
       </nav>
@@ -23,25 +23,22 @@ const Header = () => {
             : "grid place-items-center w-full bg-secondary bg-opacity-90 py-7"
         }`}
       >
-        <a href="/" className="">
+        <a href="#" className="">
           Offerings
         </a>
-        <a href="/" className="">
+        <a href="#" className="">
           Other Links
         </a>
-        <a href="/" className="">
+        <a href="#" className="">
           Testimonials
         </a>
-        <a href="/" className="">
+        <a href="#" className="">
           Portfolio
         </a>
-        <a href="/" className="">
+        <a href="#" className="">
           Contact me
         </a>
-        <a
-          href="/booktrial"
-          className="px-2 py-1 border border-white  rounded-md"
-        >
+        <a href="#" className="px-2 py-1 border border-white  rounded-md">
           Book Trial
         </a>
       </nav>
