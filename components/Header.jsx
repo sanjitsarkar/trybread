@@ -1,7 +1,5 @@
-import { Link } from "react-router-dom";
-
 import React, { useState } from "react";
-import navIcon from "../images/nav.svg";
+import navIcon from "./images/nav.svg";
 const Header = () => {
   const [showNav, setShowNav] = useState(false);
   return (

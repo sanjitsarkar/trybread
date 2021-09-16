@@ -1,10 +1,10 @@
 import React from "react";
-import FB from "../images/fb1.svg";
-import IG from "../images/ig1.svg";
-import Linkedin from "../images/linkedin1.svg";
-import Spotify from "../images/spotify1.svg";
-import Twitter from "../images/twitter1.svg";
-import YT from "../images/yt1.svg";
+import FB from "./images/fb1.svg";
+import IG from "./images/ig1.svg";
+import Linkedin from "./images/linkedin1.svg";
+import Spotify from "./images/spotify1.svg";
+import Twitter from "./images/twitter1.svg";
+import YT from "./images/yt1.svg";
 
 export const Footer = () => {
   return (
@@ -15,22 +15,22 @@ export const Footer = () => {
         </h4>
         <div className="flex gap-6 items-center ">
           <a href="">
-            <img src={IG} />
+            <img src={IG.src} />
           </a>
           <a href="">
-            <img src={FB} />
+            <img src={FB.src} />
           </a>
           <a href="">
-            <img src={YT} />
+            <img src={YT.src} />
           </a>
           <a href="">
-            <img src={Twitter} />
+            <img src={Twitter.src} />
           </a>
           <a href="">
-            <img src={Linkedin} />
+            <img src={Linkedin.src} />
           </a>
           <a href="">
-            <img src={Spotify} />
+            <img src={Spotify.src} />
           </a>
         </div>
       </div>

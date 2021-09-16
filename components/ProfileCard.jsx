@@ -2,18 +2,18 @@ import React, { useState } from "react";
 import ButtonOutline from "./ButtonOutline";
 import ButtonPrimary from "./ButtonPrimary";
 import VideoCard from "./VideoCard";
-import ThumbNail from "../images/yoga_1.png";
-import DP from "../images/dp.png";
-import IG from "../images/ig.svg";
-import FB from "../images/fb.svg";
-import Spotify from "../images/spotify.svg";
-import Linkedin from "../images/linkedin.svg";
-import Twitter from "../images/twitter.svg";
-import YT from "../images/yt.svg";
-import Speak from "../images/speak.svg";
-import Location from "../images/location.svg";
+import ThumbNail from "./images/yoga_1.png";
+import DP from "./images/dp.png";
+import IG from "./images/ig.svg";
+import FB from "./images/fb.svg";
+import Spotify from "./images/spotify.svg";
+import Linkedin from "./images/linkedin.svg";
+import Twitter from "./images/twitter.svg";
+import YT from "./images/yt.svg";
+import Speak from "./images/speak.svg";
+import Location from "./images/location.svg";
 
-import ArrowRightButton from "../images/arrow_right.svg";
+import ArrowRightButton from "./images/arrow_right.svg";
 
 const ProfileCard = () => {
   return (
@@ -22,7 +22,7 @@ const ProfileCard = () => {
         <div className="md:flex grid justify-between md:mb-7  mb-4 gap-4 md:gap-0">
           <div className="flex gap-4 ">
             <div className="border-2 border-primary rounded-md p-3">
-              <img className="object-cover w-20" src={DP} />
+              <img className="object-cover w-20" src={DP.src} />
             </div>
             <div className="flex gap-1 flex-wrap w-40 h-0 text-sm text-gray-600">
               <div className="px-3 py-1 border-primary border rounded-2xl">
@@ -60,35 +60,35 @@ const ProfileCard = () => {
           </p>
           <div className="flex gap-8 mb-4 items-center">
             <a href="">
-              <img src={IG} />
+              <img src={IG.src} />
             </a>
             <a href="">
-              <img src={FB} />
+              <img src={FB.src} />
             </a>
             <a href="">
-              <img src={YT} />
+              <img src={YT.src} />
             </a>
             <a href="">
-              <img src={Twitter} />
+              <img src={Twitter.src} />
             </a>
             <a href="">
-              <img src={Linkedin} />
+              <img src={Linkedin.src} />
             </a>
             <a href="">
-              <img src={Spotify} />
+              <img src={Spotify.src} />
             </a>
           </div>
           <hr className="mb-4" />
           <div className="flex mb-2 items-center gap-3">
             <div className="text-textDark flex gap-2 font-semibold">
-              <img src={Location} />
+              <img src={Location.src} />
               <span>Lives in</span>
             </div>
             <div className="bg-gray-100 rounded-lg p-1">New Delhi</div>
           </div>
           <div className="flex items-center gap-3 flex-wrap">
             <div className="text-textDark flex gap-2 font-semibold">
-              <img src={Speak} />
+              <img src={Speak.src} />
               <span>Speaks</span>
             </div>
             <div className="bg-gray-100 rounded-lg p-1">English</div>
@@ -106,7 +106,7 @@ const ProfileCard = () => {
               >
                 Contact me
                 <span>
-                  <img src={ArrowRightButton} />
+                  <img src={ArrowRightButton.src} />
                 </span>
               </a>
             </div>
@@ -114,7 +114,7 @@ const ProfileCard = () => {
               width=" md:w-full"
               height="h-auto md:h-full"
               scale="75 md:50"
-              img={ThumbNail}
+              img={ThumbNail.src}
             />
           </div>
           <div className="border border-gray-300 p-4 rounded-xl mt-7">
