@@ -7,14 +7,33 @@ import ArrowLeft from "../images/arrow_left.svg";
 import ArrowRight from "../images/arrow_right_1.svg";
 const Gallery = () => {
   return (
-    <div className="bg-secondary pt-80 pb-4 ">
-      <h1 className="text-white font-semibold text-2xl text-center mb-10">
+    <div className="bg-secondary gallery pb-4 ">
+      <h1 className="text-white font-semibold text-2xl text-center md:mb-10">
         BROWSE ALL MY OFFERINGS
       </h1>
-      <div className="flex gap-7 ">
-        <VideoCard img={Yoga1} scale="90" borderColor="white" />
-        <VideoCard img={Yoga2} scale="100" borderColor="white" />
-        <VideoCard img={Yoga3} scale="90" borderColor="white" />
+      <div className="flex  md:gap-7 gap-0 justify-center items-center">
+        <VideoCard
+          live={true}
+          img={Yoga1}
+          timing="Mon-Fri, 9:00 AM to 11:00 AM IST"
+          hidden="hidden md:flex"
+          scale="md:scale-90"
+          borderColor="white"
+        />
+        <VideoCard
+          live={true}
+          img={Yoga2}
+          scale="md:scale-100 scale-90"
+          borderColor="white"
+        />
+        <VideoCard
+          timing="Aug 8, 9:00 AM to 11:00 AM IST"
+          live={true}
+          hidden="hidden md:flex"
+          img={Yoga3}
+          scale="md:scale-90 scale-0"
+          borderColor="white"
+        />
       </div>
       <div className="flex gap-3 justify-center my-7">
         <div className="p-1 rounded-full cursor-pointer  ">

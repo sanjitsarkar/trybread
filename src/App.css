@@ -15,4 +15,20 @@ body {
   font-family: "Poppins", sans-serif;
   overflow-x: hidden;
 }
+
+div.gallery {
+  padding-top: 480px;
+}
+
+@media screen and (max-width: 800px) {
+  div.gallery {
+    padding-top: 780px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  div.gallery {
+    padding-top: 780px;
+  }
+}
 /*# sourceMappingURL=App.css.map */

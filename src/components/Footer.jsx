@@ -8,7 +8,7 @@ import YT from "../images/yt1.svg";
 
 export const Footer = () => {
   return (
-    <footer className="flex justify-between items-center p-7 bg-primary text-white">
+    <footer className="md:flex grid md:gap-0 place-content-center place-items-center text-center gap-6  md:justify-between md:items-center p-7 bg-primary text-white w-screen">
       <div>
         <h4 className="mb-2">
           Powered by <span className="italic text-xl">bread</span>

@@ -17,10 +17,10 @@ import ArrowRightButton from "../images/arrow_right.svg";
 
 const ProfileCard = () => {
   return (
-    <div className="md:border border-white rounded-md bg-primary p-4 md:w-7/12 w-full shadow-2xl absolute left-1/2 top-60 transform -translate-x-1/2 z-40">
-      <div className="bg-white rounded-md p-14">
-        <div className="flex justify-between mb-7">
-          <div className="flex gap-4">
+    <div className="md:border border-white rounded-md bg-primary p-4 md:w-7/12 w-screen shadow-2xl absolute left-1/2 top-60 transform -translate-x-1/2 z-40">
+      <div className="bg-white rounded-md md:p-14 p-7">
+        <div className="md:flex grid justify-between md:mb-7  mb-4 gap-4 md:gap-0">
+          <div className="flex gap-4 ">
             <div className="border-2 border-primary rounded-md p-3">
               <img className="object-cover w-20" src={DP} />
             </div>
@@ -36,9 +36,18 @@ const ProfileCard = () => {
               </div>
             </div>
           </div>
-          <div className="grid gap-4 h-0">
-            <ButtonPrimary title="Book Trial" />
-            <ButtonOutline title="Contact me" />
+          <div className="md:grid flex md:gap-4 gap-2 md:h-0">
+            <ButtonPrimary
+              title="Book Trial"
+              padding="py-1 px-2.5"
+              size="text-sm"
+            />
+
+            <ButtonOutline
+              title="Contact me"
+              padding="py-1 px-2.5"
+              size="text-sm"
+            />
           </div>
         </div>
         <div>
@@ -77,7 +86,7 @@ const ProfileCard = () => {
             </div>
             <div className="bg-gray-100 rounded-lg p-1">New Delhi</div>
           </div>
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-3 flex-wrap">
             <div className="text-textDark flex gap-2 font-semibold">
               <img src={Speak} />
               <span>Speaks</span>
@@ -88,12 +97,12 @@ const ProfileCard = () => {
           </div>
           <div className="md:flex grid justify-between mt-10">
             <div>
-              <h3 className="text-textDark mb-4 font-semibold text-2xl">
+              <h3 className="text-textDark mb-4 font-semibold text-2xl   md:w-auto">
                 Check out my video about 30 min yoga for beginners
               </h3>
               <a
                 href=""
-                className="text-primary font-semibold text-xl flex items-center mt-7"
+                className="text-primary font-semibold text-xl flex items-center md:mt-7 mb-4 md:mb-0"
               >
                 Contact me
                 <span>
@@ -101,16 +110,21 @@ const ProfileCard = () => {
                 </span>
               </a>
             </div>
-            <VideoCard img={ThumbNail} />
+            <VideoCard
+              width=" md:w-full"
+              height="h-auto md:h-full"
+              scale="75 md:50"
+              img={ThumbNail}
+            />
           </div>
           <div className="border border-gray-300 p-4 rounded-xl mt-7">
             <h4 className="mb-2 font-normal text-gray-800">
               Subscribe to my profile and never miss another update from me.
             </h4>
-            <form className="md:flex gap-3 grid">
+            <form className="md:flex grid gap-3 flex-col">
               <input
                 type="email"
-                className="border outline-none border-gray-300 px-3.5 py-1.5 rounded-md"
+                className="border outline-none border-gray-300 px-3.5 py-1.5 rounded-md w-full"
                 placeholder="Enter your Email"
               />
               <ButtonPrimary title="Subscribe" padding="px-4 py-2 md:py-0" />
